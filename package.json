@@ -1,0 +1,14 @@
+{
+  "name": "next-route-audit",
+  "version": "1.0.0",
+  "description": "Verifies Next.js source routes against build output.",
+  "bin": {
+    "next-route-audit": "bin.cjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["nextjs", "audit", "routes", "404"],
+  "author": "XORAS Execution Engine",
+  "license": "ISC"
+}
