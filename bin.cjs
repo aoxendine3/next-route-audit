@@ -1,2 +1,82 @@
 #!/usr/bin/env node
-const a0_0x3706ed=a0_0x28c6;(function(_0x2e9147,_0x59ee61){const _0x869d5b=a0_0x28c6,_0x37a4a7=_0x2e9147();while(!![]){try{const _0x1c7a5a=parseInt(_0x869d5b(0x85))/0x1+-parseInt(_0x869d5b(0x9f))/0x2+parseInt(_0x869d5b(0x89))/0x3*(parseInt(_0x869d5b(0x8f))/0x4)+parseInt(_0x869d5b(0x94))/0x5*(-parseInt(_0x869d5b(0x69))/0x6)+-parseInt(_0x869d5b(0x7b))/0x7+parseInt(_0x869d5b(0x8b))/0x8+parseInt(_0x869d5b(0x96))/0x9;if(_0x1c7a5a===_0x59ee61)break;else _0x37a4a7['push'](_0x37a4a7['shift']());}catch(_0xff73ac){_0x37a4a7['push'](_0x37a4a7['shift']());}}}(a0_0x4a83,0x5dfe7));const fs=require('fs'),path=require(a0_0x3706ed(0x98)),colors={'reset':a0_0x3706ed(0x80),'bright':a0_0x3706ed(0xa5),'green':'\x1b[32m','red':'\x1b[31m','yellow':a0_0x3706ed(0x8c),'cyan':'\x1b[36m'},projectRoot=process[a0_0x3706ed(0x84)][0x2]?path[a0_0x3706ed(0x6a)](process[a0_0x3706ed(0x84)][0x2]):process[a0_0x3706ed(0x7a)](),appDir=[path[a0_0x3706ed(0x8e)](projectRoot,a0_0x3706ed(0x81)),path[a0_0x3706ed(0x8e)](projectRoot,'app')][a0_0x3706ed(0xa9)](_0x292d2a=>fs['existsSync'](_0x292d2a)&&fs[a0_0x3706ed(0x74)](_0x292d2a)[a0_0x3706ed(0xa4)]()),buildDir=path[a0_0x3706ed(0x8e)](projectRoot,a0_0x3706ed(0x9a));console[a0_0x3706ed(0x9b)]('\x0a'+colors[a0_0x3706ed(0x9c)]+colors['cyan']+a0_0x3706ed(0x82)+colors['reset']),console['log'](colors[a0_0x3706ed(0x71)]+'Project:'+colors['reset']+'\x20'+projectRoot);!appDir&&(console['error'](colors[a0_0x3706ed(0xa1)]+a0_0x3706ed(0xa3)+colors['reset']),process[a0_0x3706ed(0x83)](0x1));function a0_0x4a83(){const _0x58b296=['Bhn0yxrtEw5J','C3rHCNrZv2L0Aa','y29UC3rYDwn0B3i','mZiWnZm1yu9nEuXi','4P2mievYCM9YoIbdB3vSzcbUB3qGzMLUzcaIlM5LEhqVC2vYDMvYl2fWCciUifj1BIaIBMv4DcbIDwLSzciGzMLYC3qU','mJGZndGYmfHnr214Ea','twLZC2LUzYbsB3v0zxm6ica','Cgf0Aa','w09sueHbtL0','lM5LEhqVC2vYDMvYl2fWCa','Bg9N','yNjPz2H0','ig9YCgHHBMvKignVBxbVBMvUDhm6','Dg9tDhjPBMC','mtm0mtqYnMLwD0PzvG','w01ju1njtKDD','CMvK','vgHLC2uGzMLSzxmGy29UDgfPBIaICgfNzsiGB3iGiNzPzxCIigLUihrOzwLYig5HBwuGyNv0igrVig5VDcbMB2XSB3CGtMv4Dc5QCYbJB252zw50Aw9UCY4','4P2mievYCM9YoIbdB3vSzcbUB3qGzMLUzcaIyxbWiIbVCIaIC3jJl2fWCciGzgLYzwn0B3j5lG','AxneAxjLy3rVCNK','g1SXBq','zw5KC1DPDgG','Aw5JBhvKzxm','CMvHzgrPCLn5BMm','zMLUza','zxHPC3rZu3LUyW','CMvZzxq','CgfNzs5QCW','zMLSDgvY','nMnrD3n2CG','CMvZB2X2zq','ig1PC3nPBMCGCM91DgvZigrLDgvJDgvKoG','DMLLDW','lMPZ','vMvYAwzPzwqGuM91DgvZoIa','C29Tzq','BgvUz3rO','y3LHBG','zM9YrwfJAa','EwvSBg93','C3rHDfn5BMm','4PQG77IpicbdB252zw50Aw9UifDHCM5PBMC6iezVDw5Kia','AxntEw1IB2XPy0XPBMS','Bwf0y2G','ls0Tief1zgL0ifn1Bw1HCNKGls0T','kcGOlISPkYKRksSK','y3DK','mtmYndKXogTlBNH4vG','4PYfief1zgL0ihn1y2nLC3nMDwW6iefSBca','CMvWBgfJzq','CgfNzs5ODg1S','C2vHCMnO','g1SWBq','C3jJl2fWCa','ls0Tie5LEhqUANmGuM91DguGqxvKAxqGls0T','zxHPDa','yxjNDG','mtKYoteZv2HJCfrc','ChvZAa','ihnVDxjJzsbYB3v0zxmGzM91BMqGAw4GyNvPBgqU','C2vW','mJaXDLvUs3bm','z3jLzw4','ndG3mZC0nhjwCLf5Bq','g1SZm20','Dg9mB3DLCKnHC2u','AM9PBG','mte0nJrZzuz1zMG','CgfNzq'];a0_0x4a83=function(){return _0x58b296;};return a0_0x4a83();}!fs[a0_0x3706ed(0x65)](buildDir)&&(console['error'](colors[a0_0x3706ed(0xa1)]+a0_0x3706ed(0x95)+colors[a0_0x3706ed(0x66)]),process[a0_0x3706ed(0x83)](0x1));function normalizeRoute(_0x2e2f07){const _0x52546d=a0_0x3706ed;return _0x2e2f07['split'](path[_0x52546d(0x88)])[_0x52546d(0x68)](_0x10a7d4=>!_0x10a7d4['startsWith']('(')||!_0x10a7d4[_0x52546d(0xa6)](')'))[_0x52546d(0x8e)]('/');}function getSourceRoutes(_0x2ff61b,_0x57d12f='',_0x41037d=[],_0x11d27b=0x0){const _0x10bfe7=a0_0x3706ed;if(_0x11d27b>0x14)return _0x41037d;const _0x4f5562=fs[_0x10bfe7(0xa8)](_0x2ff61b);for(const _0x532708 of _0x4f5562){const _0x3c2360=path[_0x10bfe7(0x8e)](_0x2ff61b,_0x532708),_0x44ed62=fs[_0x10bfe7(0x91)](_0x3c2360);if(_0x44ed62['isSymbolicLink']())continue;if(_0x44ed62[_0x10bfe7(0xa4)]()){if(_0x532708[_0x10bfe7(0x92)]('@')||_0x532708['startsWith']('_'))continue;getSourceRoutes(_0x3c2360,path[_0x10bfe7(0x8e)](_0x57d12f,_0x532708),_0x41037d,_0x11d27b+0x1);}else{if(_0x532708[_0x10bfe7(0x77)](/^page\.(tsx|jsx|js|ts)$/)){const _0x44a006=normalizeRoute(_0x57d12f);_0x41037d[_0x10bfe7(0x86)](_0x44a006===''?'/':'/'+_0x44a006);}}}return _0x41037d;}const sourceRoutes=getSourceRoutes(appDir),missingRoutes=[],orphans=[];function auditConventions(_0x3937f6,_0x5356f0=0x0){const _0xd4ba10=a0_0x3706ed,_0x5e62b1=(function(){let _0x3cb84d=!![];return function(_0x418ce2,_0x31884c){const _0x474bf7=_0x3cb84d?function(){if(_0x31884c){const _0x5e8c77=_0x31884c['apply'](_0x418ce2,arguments);return _0x31884c=null,_0x5e8c77;}}:function(){};return _0x3cb84d=![],_0x474bf7;};}()),_0x554283=_0x5e62b1(this,function(){const _0x1214e4=a0_0x28c6;return _0x554283['toString']()[_0x1214e4(0x7f)](_0x1214e4(0x79))[_0x1214e4(0x9e)]()[_0x1214e4(0x93)](_0x554283)['search'](_0x1214e4(0x79));});_0x554283();if(_0x5356f0>0x14)return;const _0xc08ab8=fs['readdirSync'](_0x3937f6);for(const _0x421ffa of _0xc08ab8){const _0x1589f9=path[_0xd4ba10(0x8e)](_0x3937f6,_0x421ffa),_0x17b857=fs[_0xd4ba10(0x91)](_0x1589f9);if(_0x17b857[_0xd4ba10(0x76)]())continue;if(_0x17b857[_0xd4ba10(0xa4)]()){if(!_0x421ffa[_0xd4ba10(0x92)]('@')&&!_0x421ffa[_0xd4ba10(0x92)]('_'))auditConventions(_0x1589f9,_0x5356f0+0x1);}else _0x421ffa[_0xd4ba10(0x77)](/\.(tsx|jsx|js|ts)$/)&&!_0x421ffa[_0xd4ba10(0x77)](/^(page|layout|loading|error|not-found|template|default|route)\./)&&((_0x421ffa[_0xd4ba10(0x8d)]()['includes'](_0xd4ba10(0x90))||_0x421ffa[_0xd4ba10(0x8d)]()[_0xd4ba10(0xa7)](_0xd4ba10(0x6c)))&&orphans[_0xd4ba10(0x86)](_0x1589f9[_0xd4ba10(0x7d)](appDir,'')));}}function a0_0x28c6(_0x1c0b6d,_0x1a6405){_0x1c0b6d=_0x1c0b6d-0x65;const _0x545194=a0_0x4a83();let _0x8c277c=_0x545194[_0x1c0b6d];if(a0_0x28c6['nSQLis']===undefined){var _0x3a4cce=function(_0x269e74){const _0x1bb50f='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x50924b='',_0x24c984='',_0x1ccaea=_0x50924b+_0x3a4cce,_0x292d2a=(''+function(){return 0x0;})['indexOf']('\x0a')!==-0x1;for(let _0x2e2f07=0x0,_0x10a7d4,_0x2ff61b,_0x57d12f=0x0;_0x2ff61b=_0x269e74['charAt'](_0x57d12f++);~_0x2ff61b&&(_0x10a7d4=_0x2e2f07%0x4?_0x10a7d4*0x40+_0x2ff61b:_0x2ff61b,_0x2e2f07++%0x4)?_0x50924b+=_0x292d2a||_0x1ccaea['charCodeAt'](_0x57d12f+0xa)-0xa!==0x0?String['fromCharCode'](0xff&_0x10a7d4>>(-0x2*_0x2e2f07&0x6)):_0x2e2f07:0x0){_0x2ff61b=_0x1bb50f['indexOf'](_0x2ff61b);}for(let _0x41037d=0x0,_0x11d27b=_0x50924b['length'];_0x41037d<_0x11d27b;_0x41037d++){_0x24c984+='%'+('00'+_0x50924b['charCodeAt'](_0x41037d)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x24c984);};a0_0x28c6['JCtfVz']=_0x3a4cce,a0_0x28c6['WaXUsD']={},a0_0x28c6['nSQLis']=!![];}const _0x4a839d=_0x545194[0x0],_0x28c661=_0x1c0b6d+_0x4a839d,_0x3944f0=a0_0x28c6['WaXUsD'][_0x28c661];if(!_0x3944f0){const _0x4f5562=function(_0x532708){this['ULkzET']=_0x532708,this['VonQYz']=[0x1,0x0,0x0],this['CQuIfy']=function(){return'newState';},this['mfpfhd']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['TWKXDm']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x4f5562['prototype']['nHmYzr']=function(){const _0x3c2360=new RegExp(this['mfpfhd']+this['TWKXDm']),_0x44ed62=_0x3c2360['test'](this['CQuIfy']['toString']())?--this['VonQYz'][0x1]:--this['VonQYz'][0x0];return this['jEQnhM'](_0x44ed62);},_0x4f5562['prototype']['jEQnhM']=function(_0x44a006){if(!Boolean(~_0x44a006))return _0x44a006;return this['wwEIjv'](this['ULkzET']);},_0x4f5562['prototype']['wwEIjv']=function(_0x3937f6){for(let _0x5356f0=0x0,_0x5e62b1=this['VonQYz']['length'];_0x5356f0<_0x5e62b1;_0x5356f0++){this['VonQYz']['push'](Math['round'](Math['random']())),_0x5e62b1=this['VonQYz']['length'];}return _0x3937f6(this['VonQYz'][0x0]);},(''+function(){return 0x0;})['indexOf']('\x0a')===-0x1&&new _0x4f5562(a0_0x28c6)['nHmYzr'](),_0x8c277c=a0_0x28c6['JCtfVz'](_0x8c277c),a0_0x28c6['WaXUsD'][_0x28c661]=_0x8c277c;}else _0x8c277c=_0x3944f0;return _0x8c277c;}auditConventions(appDir),sourceRoutes[a0_0x3706ed(0x72)](_0x3c854d=>{const _0x55f2ae=a0_0x3706ed,_0x27bd93=[path['join'](buildDir,_0x3c854d==='/'?_0x55f2ae(0x7e):_0x3c854d+'.html'),path[_0x55f2ae(0x8e)](buildDir,_0x3c854d,'page.html'),path[_0x55f2ae(0x8e)](buildDir,_0x3c854d==='/'?_0x55f2ae(0x67):_0x3c854d+_0x55f2ae(0x6d)),path[_0x55f2ae(0x8e)](buildDir,_0x3c854d,'page.js'),path[_0x55f2ae(0x8e)](buildDir,_0x3c854d+'.meta')],_0x2078c8=_0x27bd93[_0x55f2ae(0x6f)](_0x5b3ac9=>fs[_0x55f2ae(0x65)](_0x5b3ac9));!_0x2078c8&&missingRoutes['push'](_0x3c854d);});missingRoutes['length']===0x0?console[a0_0x3706ed(0x9b)](colors[a0_0x3706ed(0x8a)]+a0_0x3706ed(0x7c)+sourceRoutes[a0_0x3706ed(0x70)]+a0_0x3706ed(0x87)+colors[a0_0x3706ed(0x66)]):(console[a0_0x3706ed(0x9b)](colors[a0_0x3706ed(0xa1)]+'❌\x20Audit\x20failed:\x20'+missingRoutes['length']+a0_0x3706ed(0x6b)+colors[a0_0x3706ed(0x66)]),missingRoutes[a0_0x3706ed(0x72)](_0x594981=>console[a0_0x3706ed(0x9b)](colors[a0_0x3706ed(0x73)]+a0_0x3706ed(0xa0)+colors[a0_0x3706ed(0x66)]+'\x20'+_0x594981)));orphans[a0_0x3706ed(0x70)]>0x0&&(console[a0_0x3706ed(0x9b)]('\x0a'+colors[a0_0x3706ed(0x73)]+a0_0x3706ed(0x75)+orphans[a0_0x3706ed(0x70)]+a0_0x3706ed(0x9d)+colors[a0_0x3706ed(0x66)]),console[a0_0x3706ed(0x9b)](colors[a0_0x3706ed(0x71)]+a0_0x3706ed(0xa2)+colors['reset']),orphans[a0_0x3706ed(0x72)](_0x11351d=>console[a0_0x3706ed(0x9b)](colors['yellow']+a0_0x3706ed(0x99)+colors[a0_0x3706ed(0x66)]+'\x20'+_0x11351d)));console['log']('\x0a'+colors[a0_0x3706ed(0x9c)]+colors[a0_0x3706ed(0x71)]+a0_0x3706ed(0x78)+colors['reset']),console['log'](a0_0x3706ed(0x6e)+sourceRoutes[a0_0x3706ed(0x70)]),console[a0_0x3706ed(0x9b)](a0_0x3706ed(0x97)+missingRoutes[a0_0x3706ed(0x70)]),console[a0_0x3706ed(0x9b)]('Orphaned\x20Files:\x20\x20'+orphans[a0_0x3706ed(0x70)]+'\x0a'),process['exit'](missingRoutes[a0_0x3706ed(0x70)]===0x0?0x0:0x1);
+const fs = require('fs');
+const path = require('path');
+
+// ANSI Colors for Professional CLI Output
+const colors = {
+  reset: "\x1b[0m",
+  bright: "\x1b[1m",
+  green: "\x1b[32m",
+  red: "\x1b[31m",
+  yellow: "\x1b[33m",
+  cyan: "\x1b[36m"
+};
+
+const projectRoot = process.argv[2] ? path.resolve(process.argv[2]) : process.cwd();
+const appDir = [
+    path.join(projectRoot, 'src/app'),
+    path.join(projectRoot, 'app')
+].find(d => fs.existsSync(d) && fs.statSync(d).isDirectory());
+
+const buildDir = path.join(projectRoot, '.next/server/app');
+
+console.log(`\n${colors.bright}${colors.cyan}--- Next.js Route Audit ---${colors.reset}`);
+console.log(`${colors.cyan}Project:${colors.reset} ${projectRoot}`);
+
+if (!appDir) {
+    console.error(`${colors.red}❌ Error: Could not find "app" or "src/app" directory.${colors.reset}`);
+    process.exit(1);
+}
+
+if (!fs.existsSync(buildDir)) {
+    console.error(`${colors.red}❌ Error: Could not find ".next/server/app". Run "next build" first.${colors.reset}`);
+    process.exit(1);
+}
+
+function normalizeRoute(routePath) {
+    return routePath
+        .split(path.sep)
+        .filter(part => !part.startsWith('(') || !part.endsWith(')'))
+        .join('/');
+}
+
+function getSourceRoutes(dir, currentRoute = '', routes = []) {
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+        const fullPath = path.join(dir, file);
+        if (fs.statSync(fullPath).isDirectory()) {
+            getSourceRoutes(fullPath, path.join(currentRoute, file), routes);
+        } else if (file.match(/^page\.(tsx|jsx|js|ts)$/)) {
+            const normalized = normalizeRoute(currentRoute);
+            routes.push(normalized === '' ? '/' : `/${normalized}`);
+        }
+    }
+    return routes;
+}
+
+const sourceRoutes = getSourceRoutes(appDir);
+const missingRoutes = [];
+
+sourceRoutes.forEach(route => {
+    const possiblePaths = [
+        path.join(buildDir, route === '/' ? 'page.html' : `${route}.html`),
+        path.join(buildDir, route, 'page.html'),
+        path.join(buildDir, route === '/' ? 'page.js' : `${route}.js`),
+        path.join(buildDir, route, 'page.js')
+    ];
+
+    const exists = possiblePaths.some(p => fs.existsSync(p));
+    if (!exists) {
+        missingRoutes.push(route);
+    }
+});
+
+if (missingRoutes.length === 0) {
+    console.log(`${colors.green}✅ Audit successful: All ${sourceRoutes.length} source routes found in build.${colors.reset}\n`);
+    process.exit(0);
+} else {
+    console.log(`${colors.red}❌ Audit failed: ${missingRoutes.length} missing routes detected:${colors.reset}`);
+    missingRoutes.forEach(r => console.log(`${colors.yellow}[MISSING]${colors.reset} ${r}`));
+    console.log('');
+    process.exit(1);
+}
