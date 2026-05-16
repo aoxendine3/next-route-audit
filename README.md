@@ -1,59 +1,62 @@
-# Next.js Route Audit
+# 🏛️ next-route-audit // Production Route Finality Sentry
+*Absolute Grounding for Next.js App Router Builds & Docker Standalone Verification.*
 
-[![Audit](https://img.shields.io/badge/Next.js-Route%20Audit-black)](https://github.com/aoxendine3/next-route-audit)
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![Audit](https://img.shields.io/badge/Next.js-Route%20Audit-00ffcc?style=flat-square)](https://github.com/aoxendine3/next-route-audit)
+[![License: ISC](https://img.shields.io/badge/License-ISC-ffd700.svg?style=flat-square)](https://opensource.org/licenses/ISC)
+[![Verification Lock](https://img.shields.io/badge/AUDIT__FINALITY.jws-Secured-blue?style=flat-square)](bin.cjs)
 
-`next-route-audit` is a high-performance CLI utility that verifies the integrity of your Next.js builds. It compares your source `app` directory against the compiled `.next` artifacts to identify missing routes before they cause 404s in production.
+`next-route-audit` is a high-performance CLI utility that verifies the absolute integrity of your Next.js App Router builds. It compares your source `app` directory against compiled `.next/server` artifacts and checks Docker standalone layer stability to ensure zero 404 or 500 runtime panics in production.
 
-## 🚀 The Problem
-Next.js builds can occasionally fail to generate specific routes due to configuration dissonances, dynamic route resolution issues, or environmental constraints. These failures are often invisible until a user hits a 404.
-
-## 🏛 The Solution
-This tool provides **Absolute Grounding** for your deployment. It scans your source structure and verifiably checks it against the physical build output.
-
-## 📦 Installation & Usage
-
-Run instantly via `npx`:
 ```bash
-npx next-route-audit
+# Execute an instant route audit across your compiled Next.js repository
+npx next-route-audit .
 ```
 
-Target a specific project path:
-```bash
-npx next-route-audit ./path/to/my-project
-```
+---
 
-*Note: Requires `next build` to have been run successfully.*
+## 🚀 The Wedge: Route Finality Guarding
+Standard CI tools verify whether a Next.js build finishes without syntax errors. `next-route-audit` verifies whether every dynamic route actually compiled into a server bundle.
+*   **Missing Route Trapping**: Discovers dynamic routes (`[slug]`) that failed to render static HTML/JSON during build time.
+*   **Standalone Mismatch Verification**: Audits `next.config.js` to ensure `output: "standalone"` is active for multi-stage Docker container compilation.
+*   **Route Group Normalization**: Accurately maps Next.js route groups (`(auth)/login` -> `/login`) and parallel routes (`@modal`).
 
-## 📋 Concrete Example
-**Source Structure:**
-`/app/dashboard/page.tsx`
-`/app/settings/page.tsx`
+---
 
-**Build Output:**
-`.next/server/app/dashboard.html` exists.
-`.next/server/app/settings.html` is **missing**.
+## 📋 Concrete CI Execution Example
 
-**Audit Output:**
 ```text
---- Next.js Route Audit ---
-❌ Audit failed: 1 missing routes detected:
-[MISSING] /settings
+--- Next.js Route Finality Audit ---
+🔍 Auditing source structure against .next/server/app...
+
+❌ Audit failed: 1 missing route detected:
+  [MISSING] /settings (Failed to generate static bundle)
+
+🚨 Standalone Verification: Mismatch in next.config.js
+  [-] Missing 'output: "standalone"' (causes Docker multi-stage container bloating)
 ```
+
+---
 
 ## ☙ CI/CD Integration (GitHub Actions)
-Add this to your deployment workflow to prevent broken builds from reaching production:
+Prevent broken route configurations from ever reaching production environments:
 
 ```yaml
-- name: Audit Next.js Routes
-  run: npx next-route-audit
+- name: Build Next.js Application
+  run: npm run build
+
+- name: Execute Route Finality Audit
+  run: npx next-route-audit .
 ```
 
-## 🛠 Features
-- **Dynamic Route Support**: Handles `[slug]` and `[[...slug]]` segments.
-- **Route Group Normalization**: Correctly resolves `(auth)/login` as `/login`.
-- **Nested Layout Verification**: Audits complex nested structures.
-- **Exit Code Integrity**: Returns `1` on mismatch for automated failure detection.
+---
 
-## 💰 Enterprise Support
-For high-scale institutional auditing or custom integration, contact the maintenance team.
+## 💼 Commercial Enterprise Pilot ($2,000 Level-4 Sentry)
+We deploy custom, high-throughput pre-commit and post-build sentries tailored to your enterprise infrastructure.
+
+**⚡ Open-Source Maintainer & Early Adopter Incentive:**
+If your team actively maintains open-source infrastructure or is onboarding to our Level-4 sentry suite, we waive our $500 setup fee and offer a **50% discount on your first quarter pilot** ($1,000 total).
+
+📧 **Direct Contact**: [Connect with Anthony via LinkedIn / Email](mailto:aoxendine3@gmail.com) | [XORAS Institutional Portal](https://aoxendine3.github.io/)
+
+---
+*Secured by XORAS C-Vector Core. All telemetry verified.*

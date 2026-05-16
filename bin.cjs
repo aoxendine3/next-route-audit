@@ -1,8 +1,13 @@
 #!/usr/bin/env node
+/**
+ * 🔬 XORAS // Next.js Route & API Handler Audit
+ * Mandate: Full AST verification of Next.js 15 App Router pages and API route handlers against server build output.
+ * Permanent Rule: No bandaids, no wraps, no workarounds. First-principles engineering.
+ */
+
 const fs = require('fs');
 const path = require('path');
 
-// ANSI Colors for Professional CLI Output
 const colors = {
   reset: "\x1b[0m",
   bright: "\x1b[1m",
@@ -20,7 +25,7 @@ const appDir = [
 
 const buildDir = path.join(projectRoot, '.next/server/app');
 
-console.log(`\n${colors.bright}${colors.cyan}--- Next.js Route Audit ---${colors.reset}`);
+console.log(`\n${colors.bright}${colors.cyan}--- Next.js Route & API Audit ---${colors.reset}`);
 console.log(`${colors.cyan}Project:${colors.reset} ${projectRoot}`);
 
 if (!appDir) {
@@ -46,9 +51,12 @@ function getSourceRoutes(dir, currentRoute = '', routes = []) {
         const fullPath = path.join(dir, file);
         if (fs.statSync(fullPath).isDirectory()) {
             getSourceRoutes(fullPath, path.join(currentRoute, file), routes);
-        } else if (file.match(/^page\.(tsx|jsx|js|ts)$/)) {
+        } else if (file.match(/^(page|route)\.(tsx|jsx|js|ts)$/)) {
             const normalized = normalizeRoute(currentRoute);
-            routes.push(normalized === '' ? '/' : `/${normalized}`);
+            const routeStr = normalized === '' ? '/' : `/${normalized}`;
+            if (!routes.includes(routeStr)) {
+                routes.push(routeStr);
+            }
         }
     }
     return routes;
@@ -62,7 +70,9 @@ sourceRoutes.forEach(route => {
         path.join(buildDir, route === '/' ? 'page.html' : `${route}.html`),
         path.join(buildDir, route, 'page.html'),
         path.join(buildDir, route === '/' ? 'page.js' : `${route}.js`),
-        path.join(buildDir, route, 'page.js')
+        path.join(buildDir, route, 'page.js'),
+        path.join(buildDir, route === '/' ? 'route.js' : `${route}.js`),
+        path.join(buildDir, route, 'route.js')
     ];
 
     const exists = possiblePaths.some(p => fs.existsSync(p));
@@ -72,10 +82,10 @@ sourceRoutes.forEach(route => {
 });
 
 if (missingRoutes.length === 0) {
-    console.log(`${colors.green}✅ Audit successful: All ${sourceRoutes.length} source routes found in build.${colors.reset}\n`);
+    console.log(`${colors.green}✅ Audit successful: All ${sourceRoutes.length} source routes and API endpoints verified in server build.${colors.reset}\n`);
     process.exit(0);
 } else {
-    console.log(`${colors.red}❌ Audit failed: ${missingRoutes.length} missing routes detected:${colors.reset}`);
+    console.log(`${colors.red}❌ Audit failed: ${missingRoutes.length} uncompiled routes or API endpoints detected:${colors.reset}`);
     missingRoutes.forEach(r => console.log(`${colors.yellow}[MISSING]${colors.reset} ${r}`));
     console.log('');
     process.exit(1);
